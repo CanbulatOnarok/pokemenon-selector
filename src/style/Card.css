@@ -22,7 +22,7 @@
     transform: scale(1.2);
 }
 .card li{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -31,4 +31,8 @@
     width: 250px;
     height: 250px;
     
+}
+.name-area{
+    color: rgba(0, 0, 255, 0.365);
+    font-size: 30px;
 }

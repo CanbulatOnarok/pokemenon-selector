@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Poppins:wght@600&family=Rubik+Puddles&family=VT323&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Black+Ops+One&family=Poppins:wght@600&family=Rubik+Puddles&family=VT323&family=Young+Serif&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'VT323', monospace;
+    font-family: 'Black Ops One', cursive;
 }
 body{
     background: linear-gradient(90deg,lime 20%, blue 30% 45%, orange 50% 70%, rebeccapurple 75%);
@@ -23,8 +23,7 @@ body{
   ::-webkit-scrollbar-thumb {
     background: url('../image/pokeball.png'); /* Scroll çubuğu arka plan resmi */
     height: 50px;
-    background-size: cover; /* Resmi kaplama (cover) modunda görüntüle */
-    border: 2px solid transparent; /* Scroll çubuğu kenarlık rengi */
-    border-radius: 6px; /* Scroll çubuğu köşelerini yuvarla */
+    background-size: cover; 
+   
   }
   

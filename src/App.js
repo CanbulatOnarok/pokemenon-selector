@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
+  const [filteredPokemons, setFilteredPokemons] = useState([]);
 
   const getData = async () => {
   
@@ -14,16 +15,25 @@ function App() {
       setPokemonData(pokemon);
  
   };
+  const handleChange = (event) => {
+    const dataFind = event.target.value.toLowerCase();
+
+    const filteredPokemons = pokemonData.filter((pokemon) =>
+      pokemon.name.english.toLowerCase().includes(dataFind)
+    );
+
+    setFilteredPokemons(filteredPokemons);
+  };
 
   useEffect(() => {
     getData();
   }, []);
 
   return (
-    <body>
-      <Input />
-      <Card getData={pokemonData} />
-    </body>
+    <>
+      <Input handleChange={handleChange} />
+      <Card getData={filteredPokemons.length > 0 ? filteredPokemons : pokemonData}/>
+    </>
   );
 }
 
