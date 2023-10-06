@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Poppins:wght@600&family=Rubik+Puddles&family=VT323&family=Young+Serif&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+}
+body{
+    background: linear-gradient(90deg,lime 20%, blue 30% 45%, orange 50% 70%, rebeccapurple 75%);
+    scrollbar-color: red;
+}
+/* Genel scroll bar stillendirmesi */
+::-webkit-scrollbar {
+    width: 50px; /* Scroll bar genişliği */
+  }
+  
+  /* Scroll bar track */
+  ::-webkit-scrollbar-track {
+    background: blue; /* Scroll bar yolunun arka plan rengi */
+  }
+  
+  /* Scroll bar kendisi */
+  ::-webkit-scrollbar-thumb {
+    background: url('../image/pokeball.png'); /* Scroll çubuğu arka plan resmi */
+    height: 50px;
+    background-size: cover; /* Resmi kaplama (cover) modunda görüntüle */
+    border: 2px solid transparent; /* Scroll çubuğu kenarlık rengi */
+    border-radius: 6px; /* Scroll çubuğu köşelerini yuvarla */
+  }
+  
